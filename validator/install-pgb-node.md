@@ -1,6 +1,6 @@
 # Install PGB Node
 
-This section explains how to prepare the server, install the PGB node binary, and add the official PGB Public Testnet Chain Spec.
+This section explains how to prepare the server, install the official PGB node binary, and download the official PGB Public Testnet Chain Spec.
 
 ## 1. Connect to the Server
 
@@ -32,26 +32,12 @@ sudo mkdir -p /etc/pgb
 sudo mkdir -p /var/lib/pgb
 ```
 
-## 4. Download the Official PGB Files
+## 4. Download the Official PGB Node Binary
 
-The following files are required:
+Download the official PGB node binary directly from the PGB GitHub Release:
 
-**PGB Node Binary**
-
-Download link: Coming soon
-
-**PGB Public Testnet Chain Spec**
-
-Download link: Coming soon
-
-Only download validator files from official PGB sources.
-
-## 5. Install the PGB Node Binary
-
-Place the downloaded `pgb-node` binary in:
-
-```text
-/opt/pgb/bin/pgb-node
+```bash
+sudo wget https://github.com/PGBOfficial/persian-gulf-blockchain/releases/download/testnet-v1.0.0/pgb-node -O /opt/pgb/bin/pgb-node
 ```
 
 Make the node binary executable:
@@ -60,15 +46,15 @@ Make the node binary executable:
 sudo chmod +x /opt/pgb/bin/pgb-node
 ```
 
-## 6. Install the PGB Public Testnet Chain Spec
+## 5. Download the Official PGB Public Testnet Chain Spec
 
-Place the downloaded Chain Spec file in:
-
-```text
-/etc/pgb/pgb-testnet.json
+```bash
+sudo wget https://github.com/PGBOfficial/persian-gulf-blockchain/releases/download/testnet-v1.0.0/pgb-testnet.json -O /etc/pgb/pgb-testnet.json
 ```
 
-## 7. Verify the PGB Node Installation
+Only download validator files from official PGB sources.
+
+## 6. Verify the PGB Node Installation
 
 Run:
 
@@ -77,3 +63,31 @@ Run:
 ```
 
 If the installation is successful, the installed PGB node version will be displayed without errors.
+
+## 7. Verify File Integrity
+
+Verify the SHA256 checksum of the PGB node binary:
+
+```bash
+sha256sum /opt/pgb/bin/pgb-node
+```
+
+Expected SHA256:
+
+```text
+5ec66aa60ff4df56be96126f0b191bb5b1306d345286fc16b8421fd24595dd4d
+```
+
+Verify the SHA256 checksum of the PGB Public Testnet Chain Spec:
+
+```bash
+sha256sum /etc/pgb/pgb-testnet.json
+```
+
+Expected SHA256:
+
+```text
+b7ee39a857d80874d2e0ea86f172fe7edf0fc5c112a4dd9bb023a93dbc80362c
+```
+
+If the generated checksums match the expected values above, the downloaded files are authentic and unchanged.

@@ -101,6 +101,3 @@ Validators participating in the Public Testnet contribute directly to evaluating
 **After completion of the PGB Public Testnet, the collected network data, validator performance, security results, staking behavior, economic tests, and validator feedback will be reviewed. Based on these results, PGB will establish and publish the final validator rules, reward policies, staking parameters, security requirements, and network economic policies applicable to the next stages of the network.**
 
 Public Testnet participation does not automatically establish or guarantee the same validator conditions, rewards, Bond requirements, or economic parameters for Mainnet.
-**پس از پایان PGB Public Testnet، داده‌های جمع‌آوری‌شده از شبکه، عملکرد Validatorها، نتایج امنیتی، رفتار Staking، تست‌های اقتصادی و بازخورد Validatorها بررسی خواهند شد. براساس نتایج این ارزیابی، PGB قوانین نهایی Validatorها، سیاست‌های پاداش، پارامترهای Staking، الزامات امنیتی و سیاست‌های اقتصادی شبکه برای مراحل بعدی را تعیین و به‌صورت رسمی منتشر خواهد کرد.**
-
-مشارکت در Public Testnet به معنی تضمین شرایط یکسان Validator، Reward، Bond یا پارامترهای اقتصادی در Mainnet نیست.

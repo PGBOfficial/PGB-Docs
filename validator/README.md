@@ -12,8 +12,7 @@ This documentation covers the complete validator onboarding process, from server
 4. [Insert Session Keys](insert-session-keys.md)
 5. [Start and Sync Validator Node](start-and-sync.md)
 6. [Bond and Submit Validator Request](bond-and-register.md)
-7. [PGB Approval and Validator Activation](validator-activation.md)
-8. [Validator Operations and Security](operations-and-security.md)
+7. [Validator Operations and Security](operations-and-security.md)
 
 ## Network
 
